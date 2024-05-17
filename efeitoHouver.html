@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./stile.css"
+    <title>page</title>
+ <style>
+    body {
+  text-align:center;
+ 
+  
+}
+    h2 {
+        font-size: 4rem ;
+        font-family: system-ui, sans-serif;
+        margin-top: 100px;
+        display: inline-block;
+        position: relative;
+        cursor: default;
+    
+    }
+    
+    h2::before {
+        content: "";
+        background-color: rgb(89, 204, 208);
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        transition: transform 300ms ease;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    
+    h2:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+   width: 300px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   gap: 11px;
+   overflow: hidden;
+}
+
+.bar {
+    width: 35px;
+    height: 100px;
+    background-color: #121212;
+    transform: rotate(-30deg) translate(0,35px);
+}
+.bar--small {
+    height: 52px;
+}
+
+.bar--middle {
+    height: 85px;
+}
+
+.bar--bigger {
+    height: 120px;
+}
+
+
+
+ </style>
+</head>
+<body>
+ <div class="conteiner">
+   <div class="bar bar--small"></div>
+   <div class="bar bar--middle"></div>   
+   <div class="bar bar--bigger"></div>
+   </div>
+
+
+    
+   <h2>Titulo colorido</h2>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora JS</title>
+</head>
+<body>
+<h1>Calculadora</h1>
+
+<p id="decimal"></p>
+<p id="octal"></p>
+<p id="hexad"></p>
+
+    <script>
+
+   var temCerteza = prompt("você quer fazer contas?") 
+if(temCerteza == "sim" ){
+   var operacao = prompt("qual operação matematica você deseja fazer?")
+   var numb1 = prompt("Escreva o primeiro número.")
+   var numb2 = prompt("Escreva o segundo número.")   
+        numb1 = parseInt(numb1, 10);
+        numb2 = parseInt(numb2, 10);
+   
+    if(operacao == "soma"){
+        var total = numb1 + numb2
+        alert('O seu resultado é ' + total  )
+        document.getElementById("decimal").innerHTML =  "total da " +operacao +": "+ total;
+    }
+    if(operacao == "subtracao"){
+        var total = numb1 - numb2
+        alert('O seu resultado é ' + total  )
+        document.getElementById("decimal").innerHTML =  "total da " +operacao +": "+ total;
+    }
+    if(operacao == "multiplicacao"){
+        var total = numb1 * numb2
+        alert('O seu resultado é ' + total  )
+        document.getElementById("decimal").innerHTML =  "total da " +operacao +": "+ total;
+    }
+    if(operacao == "divisao"){
+        var total = numb1 / numb2
+        alert('O seu resultado é ' + total  )
+        document.getElementById("decimal").innerHTML =  "total da " +operacao +": "+ total;
+    }
+    if(operacao != "divisao" && operacao != "multiplicacao" && operacao != "subtracao" && operacao != "soma" ){
+        document.getElementById("decimal").innerHTML =  "Indefinido. Se possivel tente novamente."
+    }
+    }
+else{
+    document.getElementById("decimal").innerHTML =  "Indefinido. Se possivel tente novamente."
+    }
+    document.write("Say my name.")
+    document.write("Heisenberg.")
+    </script>
+</body>
+</html>
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/128/Night-With-Stars-Flat-icon.png" type="image/x-icon">
+    <title>Lorem Ipsum</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: -webkit-gradient(linear, left top, right top, from(rgb(213, 65, 233)), to(rgb(223, 176, 46))) ;
+        display: flex;
+        justify-content: center;
+        text-align:center;
+  
+}
+    .name {
+        font-size: 4rem ;
+        font-family: 'Century Gothic', sans-serif;
+        font-weight: 500;
+        margin-top: 300px;
+        display: inline-block;
+        position: relative;
+        cursor: default;
+        text-decoration: none;
+        color: blanchedalmond;
+        text-transform: uppercase;
+    }
+    
+    .name::before {
+        content: "";
+        background-color: rgba(137, 13, 153, 0.911);
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        transition: transform 300ms ease;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    
+    .name:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+        color:aliceblue;
+    }
+</style>
+</head>
+<body>
+    <a class="name" href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/512/Night-With-Stars-Flat-icon.png" target="_blank">Lorem Ipsum</a>
+    <!-- 
+     <h1 style="text-align: center;">dolor sit amet</h1>
+    <p  style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint laboriosam, ipsum saepe possimus necessitatibus rerum vero adipisci neque enim totam exercitationem ipsam? Nesciunt, magni blanditiis dicta magnam deleniti perferendis ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestiae laborum culpa, maiores eum, tempora sunt minus aperiam, dicta vitae veniam odio est et fuga nostrum expedita dolore eos reprehenderit.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur beatae animi, suscipit natus corporis similique quo delectus facere ut earum adipisci eaque doloribus, accusantium nulla nisi. Rerum, alias? Ab, hic!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, iste esse! Sunt numquam ad, reprehenderit nemo aliquid tempore, neque quas fugiat saepe officiis praesentium nulla cupiditate iusto error atque ipsum. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam tempore impedit mollitia consequuntur quos? Sequi sed accusantium excepturi quidem labore, ea neque pariatur expedita, tempora ratione fuga odio? Vel!
+    </p> 
+    -->
+
+</body>
+</html>
